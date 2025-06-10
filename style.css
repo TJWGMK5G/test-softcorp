@@ -217,16 +217,14 @@ input {
     gap: 15px;
   }
 }
-.presentation__btn {
+.presentation-btn {
   cursor: pointer;
   display: inline-block;
   text-align: center;
   max-width: 183px;
   width: 100%;
-  text-transform: uppercase;
   padding: 15px 10px;
   background-color: #ffffff;
-  color: #2a2b30;
   border: 1px solid #6f6d7b;
   border-radius: 4px;
   transition: 0.3s ease;
@@ -234,13 +232,21 @@ input {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.presentation__btn:hover {
+.presentation-btn:hover {
   background-color: #3e9cdc;
   color: #ffffff;
   border: 1px solid #ffffff;
 }
-.presentation__btn:active {
+.presentation-btn:active {
   background-color: #0066aa;
+}
+.presentation-btn__text {
+  text-transform: uppercase;
+  color: #2a2b30;
+  transition: 0.3s ease;
+}
+.presentation-btn__text-btn:hover .presentation-btn__text__text {
+  color: #fff;
 }
 
 .order {
@@ -368,8 +374,8 @@ input {
   }
 }
 .order-form__input {
-  flex: 0 33%;
-  width: 100%;
+  flex: 1 0 auto;
+  min-width: calc(33% - 20px);
   outline: none;
   border: 1px solid transparent;
   background-color: rgba(255, 255, 255, 0.85);
@@ -387,15 +393,16 @@ input {
 }
 @media (max-width: 768px) {
   .order-form__input {
+    width: 100%;
     flex: auto;
   }
 }
 .order-form-select {
+  flex: 1 0 auto;
+  min-width: calc(33% - 20px);
   cursor: pointer;
   position: relative;
   z-index: 10;
-  flex: 0 33%;
-  width: 100%;
 }
 @media (max-width: 768px) {
   .order-form-select {
