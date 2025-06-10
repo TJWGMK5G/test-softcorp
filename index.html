@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <a href="#" class="header__logo"
+              >LoremIpsum.<span class="text-accent">Net</span></a
+            >
+            <button class="burger" aria-label="Меню" title="меню" type="button">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </button>
+            <nav class="header-nav header__nav">
+              <ul class="header-nav__list">
+                <li class="header-nav__item">
+                  <a class="header-nav__link" href="#">Бизнес</a>
+                </li>
+                <li class="header-nav__item">
+                  <a class="header-nav__link" href="#">О нас</a>
+                </li>
+                <li class="header-nav__item">
+                  <a class="header-nav__link" href="#">Цены</a>
+                </li>
+                <li class="header-nav__item">
+                  <a class="header-nav__link" href="#">Оформить заказ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="presentation">
+          <div class="container">
+            <div class="presentation__wrapper">
+              <h1 class="presentation__title">
+                <span class="text-accent">Lorem ipsum </span>dolor sit amet
+                consectetur <span class="text-accent">adipiscing</span>
+              </h1>
+              <h2 class="presentation__subtitle">
+                At vero eos et accusamus et iusto odio dignissimos ducimus!
+              </h2>
+              <ul class="presentation__list">
+                <li class="presentation__item">Totam rem aperiam eaque ipsa</li>
+                <li class="presentation__item">
+                  Sit voluptatem accusantium doloremque laudantium
+                </li>
+                <li class="presentation__item">
+                  Sed ut perspiciatis, unde omnis iste natus error
+                </li>
+              </ul>
+              <div class="presentation__buttons">
+                <button class="presentation__btn" type="button">
+                  <span>заказать</span>
+                </button>
+                <button class="presentation__btn" type="button">
+                  <span>подробнее</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="order">
+          <div class="container">
+            <div class="order__wrapper">
+              <h2 class="order__title">
+                Оформление <span class="text-accent">Заказа</span>
+              </h2>
+              <p class="order__subtitle">
+                Перед заполнением формы ознакомьтесь с нашей схемой работы!
+              </p>
+              <div class="order__steps">
+                <div class="step">
+                  <div class="step__icon">
+                    <img
+                      src="./img/item-1.svg"
+                      alt="percent"
+                      width="55"
+                      height="55"
+                    />
+                  </div>
+                  <p class="step__text">Lorem ipsum dolor sit amet</p>
+                </div>
+                <div class="step">
+                  <div class="step__icon">
+                    <img
+                      src="./img/item-2.svg"
+                      alt="percent"
+                      width="55"
+                      height="55"
+                    />
+                  </div>
+                  <p class="step__text">Сonsecteturadipiscing elit</p>
+                </div>
+                <div class="step">
+                  <div class="step__icon">
+                    <img
+                      src="./img/item-3.svg"
+                      alt="document"
+                      width="55"
+                      height="55"
+                    />
+                  </div>
+                  <p class="step__text">Sed do eiusmod tempor</p>
+                </div>
+                <div class="step">
+                  <div class="step__icon">
+                    <img
+                      src="./img/item-4.svg"
+                      alt="mail"
+                      width="55"
+                      height="55"
+                    />
+                  </div>
+                  <p class="step__text">Esse cillum dolore eu fugiat</p>
+                </div>
+                <div class="step">
+                  <div class="step__icon">
+                    <img
+                      src="./img/item-5.svg"
+                      alt="step"
+                      width="55"
+                      height="55"
+                    />
+                  </div>
+                  <p class="step__text">
+                    Excepteur sint occaecat cupidatat non proident
+                  </p>
+                </div>
+              </div>
+              <form class="order-form" method="POST" action="#">
+                <div class="order-form__wrapper">
+                  <div class="order-form-select">
+                    <input
+                      type="hidden"
+                      class="order-form-select__options"
+                      name="systemType"
+                    />
+                    <div class="order-form-select__label">
+                      <span class="order-form-select__text"
+                        >Выберите тип системы</span
+                      >
+                      <svg
+                        class="order-form-select__icon"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="currentColor"
+                      >
+                        <path d="M4 6 L8 10 L12 6" fill="currentColor" />
+                      </svg>
+                    </div>
+                    <ul class="order-form-select__list">
+                      <li class="order-form-select__option">
+                        Sed ut perspiciatis
+                      </li>
+                      <li class="order-form-select__option">Nemo enim ipsam</li>
+                      <li class="order-form-select__option">Et harum quidem</li>
+                      <li class="order-form-select__option">
+                        Temporibus autem
+                      </li>
+                      <li class="order-form-select__option">
+                        Itaque earum rerum
+                      </li>
+                      <li class="order-form-select__option">
+                        Lorem, ipsum dolor.
+                      </li>
+                      <li class="order-form-select__option">Lorem, ipsum.</li>
+                      <li class="order-form-select__option">Et harum quidem</li>
+                      <li class="order-form-select__option">
+                        Temporibus autem
+                      </li>
+                      <li class="order-form-select__option">
+                        Itaque earum rerum
+                      </li>
+                      <li class="order-form-select__option">
+                        Lorem, ipsum dolor.
+                      </li>
+                      <li class="order-form-select__option">Lorem, ipsum.</li>
+                    </ul>
+                  </div>
+                  <input
+                    type="email"
+                    name="email"
+                    required
+                    autocomplete
+                    placeholder="Ваш e-mail"
+                    class="order-form__input"
+                  />
+                  <input
+                    type="text"
+                    name="firstname"
+                    placeholder="Ваше имя"
+                    class="order-form__input"
+                  />
+                </div>
+                <div class="order-form__wrapper">
+                  <div class="order-form-range">
+                    <label class="order-form-range__header" for="range">
+                      <p class="order-form-range__title">
+                        Sed ut perspiciatis, unde omnis iste natus
+                      </p>
+                      <div class="order-form-range__value">
+                        <span class="order-form-range__num">75</span>%
+                      </div>
+                    </label>
+                    <input
+                      type="range"
+                      aria-valuemin="1"
+                      aria-valuemax="100"
+                      min="1"
+                      max="100"
+                      value="75"
+                      name="range"
+                      id="range"
+                      class="order-form-range__input"
+                    />
+                  </div>
+                  <div class="order-form-file">
+                    <label class="order-form-file__label" for="file">
+                      <img src="./img/files.svg" alt="file" />
+                      прикрепить файл
+                    </label>
+                    <input
+                      type="file"
+                      name="file"
+                      id="file"
+                      class="order-form-file__input"
+                    />
+                  </div>
+                </div>
+                <button class="order-form__submit" type="submit">
+                  <span>отправить</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <span class="footer__copyright">
+              © 2018 «LoremIpsum.net» Все права защищены.
+            </span>
+            <div class="footer__payments">
+              <div class="footer__payment">
+                <img
+                  src="./img/footer-logo-1.svg"
+                  alt="Qiwi wallet"
+                  width="19"
+                  height="19"
+                />
+                <span>Qiwi wallet</span>
+              </div>
+              <div class="footer__payment">
+                <img
+                  src="./img/footer-logo-2.svg"
+                  alt="Yandex Money"
+                  width="19"
+                  height="19"
+                />
+                <span>Yandex Money</span>
+              </div>
+              <div class="footer__payment">
+                <img
+                  src="./img/footer-logo-3.svg"
+                  alt="Web Money"
+                  width="19"
+                  height="19"
+                />
+                <span>Web Money</span>
+              </div>
+            </div>
+            <div class="footer__contacts">
+              <a href="mailto:info@ipsum228.com" class="footer__link">
+                <img
+                  src="./img/footer-logo-4.svg"
+                  alt="Email"
+                  width="20"
+                  height="20"
+                />
+                <span>info@ipsum228.com</span>
+              </a>
+              <a href="#" target="_blank" class="footer__link">
+                <img
+                  src="./img/footer-logo-5.svg"
+                  alt="ВКонтакте"
+                  width="20"
+                  height="20"
+                />
+                <span>Мы вконтакте</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="./script.js"></script>
+    </div>
+  </body>
+</html>
